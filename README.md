@@ -21,4 +21,4 @@ When the game is over, then I can save my initials and score.
 **Screenshot:** ![screenshot-of-quiz](quizscreenshot.png)
 
 
-**Link:**
+**Link:** https://silvernotshell.github.io/javascriptcodequiz/
