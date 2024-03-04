@@ -1,0 +1,70 @@
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+    <style>
+        body {
+            font-family: 'Itim', sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-shadow: 5px 5px 5px #bd9881;
+        }
+
+        h2 {
+            font-size: 25px;
+            text-shadow: 5px 5px 5px #bd9881;
+        }
+
+        h3 {
+            font-size: 20px;
+            text-shadow: 5px 5px 5px #bd9881;
+        }
+
+        button {
+            font-family: 'Itim', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>High Scores</h1>
+    </header>
+
+    <div id="high-scores-container">
+        <ol id="high-scores-list"></ol>
+        <br>
+        <button onclick="goBack()">Go back</button>
+    </div>
+
+    <script>
+        // Fetch and display high scores from localStorage
+        document.addEventListener('DOMContentLoaded', function () {
+            const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+            const highScoresList = document.getElementById('high-scores-list');
+
+            highScores.forEach(entry => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${entry.initials}: ${entry.score}`;
+                highScoresList.appendChild(listItem);
+            });
+        });
+
+        function goBack() {
+            // Redirect back to the main quiz page
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

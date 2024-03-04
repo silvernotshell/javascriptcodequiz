@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+</head>
+
+<body>
+    <!-- timer and score -->
+    <header>
+        <div id="timer">Timer: <span id="time-left">60</span> seconds</div>
+        <button id="view-scores-btn" onclick="viewHighScores()">View High Scores</button>
+    </header>
+    <!-- quiz intro and buttons -->
+    <div id="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <h2>How well do you know the fundamentals of JavaScript?</h2>
+        <h3>The following quiz will test your knowledge on the basics.<br>
+            The quiz consists of 5 questions. You will have 60 seconds to complete it.<br>
+            Any questions answered incorrectly will subtract time from the clock.<br>
+            When the timer runs out, the quiz is over and you will be shown your results. </h3>
+        <br>
+        <br>
+        <br>
+        <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+    </div>
+</body>
+
+<!-- results-->
+<div id="game-over-container" style="display: none;">
+    <h2>Quiz Over!</h2>
+    <p>Your score: <span id="score"></span></p>
+    <br>
+    <label for="initials">Enter Initials:</label>
+    <input type="text" id="initials" maxlength="3"> <br>
+    <br>
+    <button id="savescore" onclick="saveScore()">Save Score</button>
+</div>
+
+<script src="script.js"></script>
+
+</html>
