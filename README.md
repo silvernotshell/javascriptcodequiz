@@ -1,11 +1,11 @@
 # javascriptcodequiz
-Description:
+**Description:**
 Coding quiz created to test knowledge of JavaScript
 
-User Story:
+**User Story:**
 As a coding boot camp student, I want to take a timed quiz on JavaScript fundamentals that stores high scores so that I can gauge my progress compared to my peers. 
 
-Acceptance Criteria:
+**Acceptance Criteria:**
 Given I am taking a code quiz...
 
 When I click the start button, then a timer starts and I am presented with a question.
@@ -18,7 +18,7 @@ When all questions are answered or the timer reaches 0, then the game is over.
 
 When the game is over, then I can save my initials and score. 
 
-Screenshot: ![screenshot-of-quiz](quizscreenshot.png)
+**Screenshot:** ![screenshot-of-quiz](quizscreenshot.png)
 
 
-Link:
+**Link:**
